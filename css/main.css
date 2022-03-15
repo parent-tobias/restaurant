@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700");
+:root {
+  --grey: #d6d6d6;
+  --red: #ff0000;
+  --body-font: "Montserrat", sans-serif;
+  --white: #fff;
+  --yellow: #FFE100;
+  --pad: 12.5px;
+}
+
+* {
+  font-family: var(--body-font);
+}
+
+.banner {
+  background: url("../images/ChickenRepublic_HomePageBanner.jpg");
+  padding: 0rem 2rem 6rem 2rem;
+  border-radius: var(--pad);
+}
+
+.banner-text, .banner .btn-order {
+  color: var(--white);
+}
+
+.banner-text {
+  width: 450px;
+  word-wrap: break-word;
+  display: block;
+}
+
+order-button svg {
+  width: 150px;
+}
+
+triangle-icon svg {
+  width: 25px;
+  transform: rotate(90deg);
+}
+
+order-button svg path {
+  fill: var(--red);
+}
+
+triangle-icon svg .triangle {
+  fill: var(--yellow);
+  stroke: var(--yellow);
+  stroke-width: 30px;
+}
+
+order-button svg text {
+  fill: var(--white);
+  font-size: 25px;
+  font-weight: 600;
+  white-space: pre;
+  text-align: center;
+  padding-right: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-template-rows: 125px;
+  grid-column-gap: 2rem;
+}
+
+.grid > div {
+  background: var(--grey);
+  border-radius: var(--pad);
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.navbar-brand img {
+  width: 75px;
+  height: 75px;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+.banner .btn-order {
+  background: var(--red);
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  padding-right: 4.5rem;
+  border-radius: var(--pad);
+}
+
+/*# sourceMappingURL=main.css.map */
