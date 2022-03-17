@@ -12,13 +12,19 @@
     font-family: var(--body-font);
 }
 
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .banner {
     background: url("../images/ChickenRepublic_HomePageBanner.jpg");
     padding: 0rem 2rem 6rem 2rem;
     border-radius: var(--pad);
+    width: 1150px;
 }
 
-.banner-text, .banner .btn-order {
+.banner-text {
     color: var(--white);
 }
 
@@ -26,6 +32,11 @@
    width: 450px;
    word-wrap: break-word;
    display: block;
+   padding-top: 5rem;
+}
+
+.banner-text h2 {
+    text-transform: capitalize;
 }
 
 order-button svg {
@@ -44,7 +55,7 @@ order-button svg path {
 triangle-icon svg .triangle {
     fill: var(--yellow);
     stroke: var(--yellow);
-    stroke-width: 30px;
+    stroke-width: 80px;
 }
 
 order-button svg text {
@@ -58,17 +69,31 @@ order-button svg text {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 150px);
-    grid-template-rows: 125px;
-    grid-column-gap: 2rem;
+    grid-template-columns: repeat(6, 175px);
+    grid-template-rows: 180px;
+    grid-column-gap: 1.5rem;
 }
 
 .grid > div {
     background: var(--grey);
-   // border: 2px solid var(--grey);
     border-radius: var(--pad);
     font-weight: 600;
-    padding: 5px 10px;
+}
+
+.grid > div img {
+    width: 75px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.grid > div > span {
+    text-align: center;
+    font-size: 15.5px;
+}
+
+.grid > div > span::before {
+    content: '\A';
+    white-space: pre;
 }
 
 .navbar-brand img {
@@ -78,15 +103,48 @@ order-button svg text {
     border-radius: 50%;
 }
 
-.banner .btn-order {
-    background: var(--red);
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-    padding-right: 4.5rem;
-    border-radius: var(--pad);
+.navbar-nav .nav-link, .navbar-nav .nav-link:hover {
+    color: black;
+    text-decoration: none;
 }
-// .grid div::before {
-//    content: url("../images/ChickenRepublic_BannerIcon2-1.png");
-//     width: 100px;
-//     height: 100px;
-//    // background: url("../images/ChickenRepublic_BannerIcon2-1.png")
-// }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active:after {
+    content: '\A';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: var(--red);
+    border-radius: var(--pad);
+    margin: auto;
+    margin-top: 0.25rem;
+}
+
+.nav-link:hover::after {
+    content: '\A';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: var(--red);
+    border-radius: var(--pad);
+    margin: auto;
+    margin-top: 0.25rem;
+}
+
+#order-section h2::after {
+   content: "";
+   display: block;
+   width: 3.5%;
+   border-bottom: 5px solid var(--red);
+   margin-left: 43%;
+   padding-top: 3.5px;
+}
+
+.grid > div:hover {
+    background: var(--red);
+    color: var(--white);
+    cursor: pointer;
+}
