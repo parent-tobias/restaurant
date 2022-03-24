@@ -1,0 +1,50 @@
+{
+    "soulful": [
+        {
+           "name": "Express Meal with Chips",
+           "description": "1 piece of fried chicken with regular or large chips and a refreshing PET drink",
+           "r-price": 1450,
+           "l-price": 1650
+       },
+       {
+           "name": "New Spicy Yam Meal",
+           "description": "1 piece of fried chicken served with our New Spicy Yam and a FREE pepper sauce",
+           "r-price": 1000,
+           "l-price": 1200
+       },
+       {
+           "name": "Spicy Yam Max Meal",
+           "description": "1 piece of fried chicken served with <br>our New Spicy Yam plus our newly improved moin moin or coleslaw, <br> a FREE pepper sauce and a PET drink",
+           "r-price": 1400,
+           "l-price": 1600
+       },
+       {
+           "name": "Spicy Yam Max Meal",
+           "description": "1 piece of fried chicken served with <br>our New Spicy Yam plus our newly improved moin moin or coleslaw, <br> a FREE pepper sauce and a PET drink",
+           "r-price": 1400,
+           "l-price": 1600
+       },{
+           "name": "CITIZENS MEAL WITH CHIPS",
+           "description": "2 pieces of fried chicken served with regular or large chips and a PET drink",
+           "r-price": 1900,
+           "l-price": 2100 
+           }, {
+           "name": "CITIZENS MEAL",
+           "description": "2 pieces of fried chicken, served with your choice of fried/spicy rice or spaghetti and a PET drink",
+           "price": 1700 
+           }, {
+           "name": "CITIZENS SPICY YAM MEAL",
+           "description": "2 pieces of fried chicken served with our New Spicy Yam, a FREE pepper sauce and a PET drink",
+           "r-price": 1800,
+           "l-price": 2000
+           }, {
+           "name": "POT LOVERS MEAL",
+           "description": "8 pieces of fried chicken, served with your choice of 4 portions of fried/spicy rice, spaghetti or chips, plus 2 portions of moin moin, coleslaw or dodo cubes and 4 PET drinks",
+           "price": 6600
+           }, {
+           "name": "MEGA POT LOVERS MEAL",
+           "description": "10 pieces of fried chicken with your choice of 6 x portions of spaghetti, fried/spicy rice or regular chips plus 4 x portions of moin moin, coleslaw or dodo cubes and 6 x PET drinks",
+           "price": 9600
+           }
+   ] 
+}

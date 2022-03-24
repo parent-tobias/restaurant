@@ -1,4 +1,8 @@
+@use  './responsiveness';
+@use './transitions';
+@use './_images';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700');
+
 :root {
     --grey: #d6d6d6;
     --red: #ff0000;
@@ -21,7 +25,6 @@ body, html {
     background: url("../images/ChickenRepublic_HomePageBanner.jpg");
     padding: 0rem 2rem 6rem 2rem;
     border-radius: var(--pad);
-    width: 1150px;
 }
 
 .banner-text {
@@ -44,7 +47,7 @@ order-button svg {
 }
 
 triangle-icon svg {
-    width: 25px;
+    width: 20px;
     transform: rotate(90deg);
 }
 
@@ -72,12 +75,25 @@ order-button svg text {
     grid-template-columns: repeat(6, 175px);
     grid-template-rows: 180px;
     grid-column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.view {
+    display: grid;
+    grid-template-columns: repeat(2, 175px);
+    grid-template-rows: repeat(2, 180px);
+    grid-column-gap: 1.5rem;
+    justify-content: center;
 }
 
 .grid > div {
     background: var(--grey);
     border-radius: var(--pad);
     font-weight: 600;
+}
+
+.view > div img {
+    width: 100%;
 }
 
 .grid > div img {
@@ -103,15 +119,6 @@ order-button svg text {
     border-radius: 50%;
 }
 
-.navbar-nav .nav-link, .navbar-nav .nav-link:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
-    font-weight: 600;
-}
-
 .navbar-nav .nav-link.active:after {
     content: '\A';
     display: block;
@@ -123,18 +130,7 @@ order-button svg text {
     margin-top: 0.25rem;
 }
 
-.nav-link:hover::after {
-    content: '\A';
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: var(--red);
-    border-radius: var(--pad);
-    margin: auto;
-    margin-top: 0.25rem;
-}
-
-#order-section h2::after {
+#order-section h2::after, #carousel h2::after {
    content: "";
    display: block;
    width: 3.5%;
@@ -143,8 +139,94 @@ order-button svg text {
    padding-top: 3.5px;
 }
 
-.grid > div:hover {
+#carousel h2::after {
+    margin-left: 33%;
+}
+
+.card {
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.card-body {
+    margin: auto;
+}
+
+.card .btn-primary {
+    color: var(--red);
+    border-radius: 50px;
+    border: 2px solid var(--red);
+    background: transparent;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.download, .q-links, .social-links {
+    list-style-type: none;
+}
+
+.download, .social-links {
+    display: flex;
+}
+
+footer .download, .q-links {
+    justify-content: space-between;
+}
+
+.q-links {
+    flex-wrap: wrap;
+    max-width: 500px;
+    white-space: nowrap;
+}
+
+.social-item {
+    font-size: x-large;
+    border: 0.25px solid grey;
+    margin-right: 2.5rem;
+    padding: 5px var(--pad);
+    border-radius: 50%;
+}
+
+.social-item:nth-child(1) {
+    padding: 5px 15px;
+}
+
+.q-item {
+    padding: 5px 0px;
+    font-weight: 600;
+}
+
+.q-item a, .end-row li a {
+    color: black;
+    text-decoration: none;
+}
+
+.end-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.end-row li {
+    list-style: none;
+    flex: 0 1 25%;
+    white-space: nowrap;
+}
+
+.copy a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#mobile-app button {
     background: var(--red);
+    border-radius: var(--pad);
     color: var(--white);
-    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#mobile-app a {
+    color: var(--red);
+    
 }

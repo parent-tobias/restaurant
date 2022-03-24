@@ -1,0 +1,48 @@
+.navbar-nav .nav-link, .navbar-nav .nav-link:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    font-weight: 600;
+}
+
+.grid > div:hover {
+    background: var(--red);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav-link:hover::after {
+    content: '\A';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: var(--red);
+    border-radius: var(--pad);
+    margin: auto;
+    margin-top: 0.25rem;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+}
+
+.card .btn-primary:hover, .card .btn-primary:active {
+    color: var(--white);
+    border: 2px solid var(--red);
+    background: var(--red);
+}
+
+.card .btn-primary:active,
+.card .btn-primary:focus {
+    border-color: var(--red);
+    background-color: var(--red);
+    box-shadow: 0 0 0 0.2rem rgb(255, 0, 0, 0.5);
+}
+
+order-button svg:hover {
+    width: 160px;
+    cursor: pointer;
+    transition: width ease-in 0.25s;
+}
