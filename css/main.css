@@ -140,7 +140,7 @@ order-button svg text {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 175px);
+  grid-template-columns: repeat(6, minmax(75px, 1fr));
   grid-template-rows: 180px;
   grid-column-gap: 1.5rem;
   justify-content: center;
